@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Firmware Scan Report</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #0f1117; color: #e0e0e0; padding: 2rem; }
+  h1 { font-size: 1.8rem; color: #00d4ff; margin-bottom: 0.3rem; }
+  .meta { color: #888; font-size: 0.85rem; margin-bottom: 2rem; }
+  .cards { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+  .card { background: #1a1d2e; border-radius: 10px; padding: 1.2rem 1.8rem; min-width: 140px; text-align: center; border: 1px solid #2a2d3e; }
+  .card .num { font-size: 2rem; font-weight: bold; }
+  .card .label { font-size: 0.75rem; color: #888; margin-top: 4px; text-transform: uppercase; }
+  .critical { color: #e74c3c; } .high { color: #e67e22; }
+  .medium { color: #f1c40f; } .low { color: #3498db; }
+  .total { color: #00d4ff; }
+  table { width: 100%; border-collapse: collapse; background: #1a1d2e; border-radius: 10px; overflow: hidden; }
+  th { background: #12151f; color: #888; font-size: 0.75rem; text-transform: uppercase; padding: 0.8rem 1rem; text-align: left; }
+  td { padding: 0.75rem 1rem; border-bottom: 1px solid #2a2d3e; font-size: 0.88rem; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #1f2235; }
+  .badge { padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; color: #000; }
+  a { color: #00d4ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .firmware-path { background: #1a1d2e; border-radius: 8px; padding: 0.6rem 1rem; font-family: monospace; font-size: 0.85rem; color: #00d4ff; margin-bottom: 2rem; border: 1px solid #2a2d3e; }
+</style>
+</head>
+<body>
+  <h1>⚡ Firmware Vulnerability Report</h1>
+  <div class="meta">Scan date: 2026-07-03 10:55:01</div>
+  <div class="firmware-path">📁 /tmp/tplink_archerc7.bin</div>
+
+  <div class="cards">
+    <div class="card"><div class="num total">26</div><div class="label">Total</div></div>
+    <div class="card"><div class="num critical">3</div><div class="label">Critical</div></div>
+    <div class="card"><div class="num high">19</div><div class="label">High</div></div>
+    <div class="card"><div class="num medium">1</div><div class="label">Medium</div></div>
+    <div class="card"><div class="num low">0</div><div class="label">Low</div></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Severity</th>
+        <th>Type</th>
+        <th>CVE</th>
+        <th>Detail</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="badge" style="background:#e74c3c">CRITICAL</span></td>
+            <td>private_key</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">Binary file /tmp/fw_extracted/_tplink_archerc7.bin.extracted/squashfs-root/usr/l</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e74c3c">CRITICAL</span></td>
+            <td>private_key</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">Binary file /tmp/fw_extracted/_tplink_archerc7.bin.extracted/squashfs-root/usr/l</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e74c3c">CRITICAL</span></td>
+            <td>aws_key</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">Binary file /tmp/fw_extracted/_tplink_archerc7.bin.extracted/squashfs-root/usr/l</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">Binary file /tmp/fw_extracted/_tplink_archerc7.bin.extracted/squashfs-root/usr/s</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">126:o=ss.taboption('encryption',form.Value,'auth_server',_('RADIUS Authenticatio</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">130:o=ss.taboption('encryption',form.Flag,'per_sta_vif',_('RADIUS Per STA VLAN')</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">136:return true;};o=ss.taboption('encryption',form.FileUpload,'ca_cert',_('Path </td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">1:'use strict';'require view';'require dom';'require ui';'require form';'require</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">6:return true;},render:function(){var m,s,o;m=new form.JSONMap(formData,_('Route</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">10:this.value(devices[i]);return form.Value.prototype.load.apply(this,[section_i</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">1:'use strict';'require uci';'require form';'require network';network.registerPa</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">6:return network.registerProtocol('pppoe',{getI18n:function(){return _('PPPoE');</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">6:return network.registerProtocol('pptp',{getI18n:function(){return _('PPtP');},</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">3:return _('The HE.net endpoint update configuration changed, you must now use t</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">6:return network.registerProtocol('pppoa',{getI18n:function(){return _('PPPoATM'</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">1381:				passphrase="sae_password=\"${key}\""</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">1456:						append network_data "password=\"$password\"" "$N$T"</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">198:				set network.$1.password='password'</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">Binary file /tmp/fw_extracted/_tplink_archerc7.bin.extracted/squashfs-root/bin/u</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">1144:		[ -n "$private_key_passwd" ] && append bss_conf "private_key_passwd=$priv</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">1410:					append network_data "private_key_passwd=\"$priv_key_pwd\"" "$N$T"</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22">HIGH</span></td>
+            <td>password</td>
+            <td>—</td>
+            <td style="font-size:12px;color:#666">1454:						append network_data "private_key2_passwd=\"$priv_key2_pwd\"" "$N$T"</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#f1c40f">MEDIUM</span></td>
+            <td>cve</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23310" target="_blank">CVE-2026-23310</a></td>
+            <td style="font-size:12px;color:#666">In the Linux kernel, the following vulnerability has been resolved:
+
+bpf/bonding: reject vlan+srcmac</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#95a5a6">UNKNOWN</span></td>
+            <td>cve</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2012-2053" target="_blank">CVE-2012-2053</a></td>
+            <td style="font-size:12px;color:#666">The sudoers file in the Linux system configuration in F5 FirePass 6.0.0 through 6.1.0 and 7.0.0 does</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#95a5a6">UNKNOWN</span></td>
+            <td>cve</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2012-5975" target="_blank">CVE-2012-5975</a></td>
+            <td style="font-size:12px;color:#666">The SSH USERAUTH CHANGE REQUEST feature in SSH Tectia Server 6.0.4 through 6.0.20, 6.1.0 through 6.1</td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#95a5a6">UNKNOWN</span></td>
+            <td>cve</td>
+            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2013-0543" target="_blank">CVE-2013-0543</a></td>
+            <td style="font-size:12px;color:#666">IBM WebSphere Application Server (WAS) 6.1 before 6.1.0.47, 7.0 before 7.0.0.29, 8.0 before 8.0.0.6,</td>
+        </tr></tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Firmware Scan Report</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #0f1117; color: #e0e0e0; padding: 2rem; }
+  h1 { font-size: 1.8rem; color: #00d4ff; margin-bottom: 0.3rem; }
+  .meta { color: #888; font-size: 0.85rem; margin-bottom: 2rem; }
+  .cards { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+  .card { background: #1a1d2e; border-radius: 10px; padding: 1.2rem 1.8rem; min-width: 140px; text-align: center; border: 1px solid #2a2d3e; }
+  .card .num { font-size: 2rem; font-weight: bold; }
+  .card .label { font-size: 0.75rem; color: #888; margin-top: 4px; text-transform: uppercase; }
+  .critical { color: #e74c3c; } .high { color: #e67e22; }
+  .medium { color: #f1c40f; } .low { color: #3498db; }
+  .total { color: #00d4ff; }
+  table { width: 100%; border-collapse: collapse; background: #1a1d2e; border-radius: 10px; overflow: hidden; }
+  th { background: #12151f; color: #888; font-size: 0.75rem; text-transform: uppercase; padding: 0.8rem 1rem; text-align: left; }
+  td { padding: 0.75rem 1rem; border-bottom: 1px solid #2a2d3e; font-size: 0.88rem; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #1f2235; }
+  .badge { padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; color: #000; }
+  a { color: #00d4ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .firmware-path { background: #1a1d2e; border-radius: 8px; padding: 0.6rem 1rem; font-family: monospace; font-size: 0.85rem; color: #00d4ff; margin-bottom: 2rem; border: 1px solid #2a2d3e; }
+</style>
+</head>
+<body>
+  <h1>⚡ Firmware Vulnerability Report</h1>
+  <div class="meta">Scan date: 2026-06-29 10:14:44</div>
+  <div class="firmware-path">📁 /firmware/Firmware/DVRF_v03.bin</div>
+
+  <div class="cards">
+    <div class="card"><div class="num total">0</div><div class="label">Total</div></div>
+    <div class="card"><div class="num critical">0</div><div class="label">Critical</div></div>
+    <div class="card"><div class="num high">0</div><div class="label">High</div></div>
+    <div class="card"><div class="num medium">0</div><div class="label">Medium</div></div>
+    <div class="card"><div class="num low">0</div><div class="label">Low</div></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Severity</th>
+        <th>Type</th>
+        <th>CVE</th>
+        <th>Detail</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</body>
+</html>
